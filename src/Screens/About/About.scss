@@ -1,0 +1,28 @@
+.about__container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 4rem;
+    .left{
+        max-width: 600px;
+        .heading{
+            font: normal 600 50px / 50px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    text-transform: none;
+
+        }
+        .para{
+            font: normal 500 18px / 27px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+            word-spacing: normal;
+            color: #000000;
+            margin: 1.5rem 0;
+            line-height: 36px;
+        }
+        .about__btn{
+            font-size: 17px;
+            font-weight: 600;
+            color: gray;
+            padding: 10px 20px;
+            border: 2px solid gray;
+            background-color: white;
+        }
+    }
+}

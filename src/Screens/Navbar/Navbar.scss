@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .logo{
+        .nav__logo{
+            max-height: 100px;
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 24px;
+    }
+}
