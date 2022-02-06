@@ -1,0 +1,101 @@
+.contact__container{
+   
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1rem;
+    .heading{
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: 10px;
+        text-align: center;
+        @media screen and (max-width:450px){
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        
+    }
+    .bottom__icon{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .icon{
+       font-size: 50px;
+       margin-bottom: 15px;
+    }
+
+    .contact__form{
+        .text{
+            height: 45px;
+            width: 100%;
+            padding-left: 10px;
+            background: #F5F5F5;
+            border-top: 1px solid #F5F5F5 !important;
+            border-right: 1px solid #F5F5F5 !important;
+            border-bottom: 3px solid rgba(128, 128, 128, 0.479) !important;
+            border-left: 1px solid #F5F5F5 !important;
+            outline: none;
+        }
+        .first{
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 2em;
+            @media screen and (max-width:600px){
+                display: block;
+            }
+            @media screen and (max-width:450px){
+                margin-bottom: 1em;
+
+            }
+            
+        }
+        @media screen and (max-width:600px){
+            .div1{
+                margin-bottom: 2em;
+            }
+        }
+        @media screen and (max-width:600px){
+            .div1{
+                margin-bottom: 1em;
+            }
+        }
+
+
+        .in1{
+            margin-bottom: 2em;
+            @media screen and (max-width:450px){
+                margin-bottom: 1em;
+
+            }
+
+
+        }
+        .area{
+            resize: none;
+            height: 250px;
+        }
+        .contact__btn{
+            background:  black;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    font-family: Cabin, sans-serif;
+    font-weight: bold;
+    // height: 30px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.2s ease;
+    height: 53px;
+    width: 100%;
+}
+        }
+    }
