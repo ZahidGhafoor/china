@@ -9,12 +9,12 @@ import Slider from './Screens/Slider/Slider'
 const App = () => {
   return (
     <>
-    {/* <Navbar/>
-    <Slider/> */}
+    {/* <Navbar/> */}
+    <Slider/>
     <About/>
-    {/* <Contact/> 
+    <Contact/> 
     <Adress/> 
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }

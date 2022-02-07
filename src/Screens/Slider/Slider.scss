@@ -4,6 +4,10 @@
 
     .slider_box{
         height: 60vh;
+        @media screen and (max-width:1200px){
+            height: 0;
+        
+        }
 
         .headline{
             height: 100%;
