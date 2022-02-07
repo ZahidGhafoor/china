@@ -1,0 +1,32 @@
+.burger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .iconss{
+        height: 55px !important;
+        width: 44px !important;
+        color: red;
+    }
+}
+
+.mobile__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .home{
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        font-weight: 600;
+        cursor: pointer;
+        .icons{
+            // height: 55px !important;
+            color: red;
+    
+        }
+    }
+    
+}

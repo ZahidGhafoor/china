@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Navbar.scss"
 import logo from "../../Assets/logo1.png"
+import Mobile from './Mobile'
 
 
 const Navbar = () => {
@@ -16,6 +17,10 @@ const Navbar = () => {
                   <div className="home">Contact</div>
                   <div className="home">Adress</div>
                   <div className="home">Products</div>
+              </div>
+
+              <div className="mobile__nav">
+                  <Mobile/>
               </div>
               </div>  
         </>

@@ -8,6 +8,7 @@ import Product from './Screens/Products/Product'
 import Slider from './Screens/Slider/Slider'
 
 import "./App.css"
+import Mobile from './Screens/Navbar/Mobile'
 
 
 
@@ -15,12 +16,13 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    {/* <Slider/>
+  
+     <Slider/>
     <About/>
     <Contact/> 
-    <Adress/>*/} 
-  {/* <Product/>
-  <Footer/>  */}
+    <Adress/>
+  {/* <Product/> */}
+  <Footer/>
     </>
   )
 }
