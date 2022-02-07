@@ -4,17 +4,23 @@ import Adress from './Screens/Adress/Adress'
 import Contact from './Screens/Contact/Contact'
 import Footer from './Screens/Footer/Footer'
 import Navbar from './Screens/Navbar/Navbar'
+import Product from './Screens/Products/Product'
 import Slider from './Screens/Slider/Slider'
+
+import "./App.css"
+
+
 
 const App = () => {
   return (
     <>
-    {/* <Navbar/> */}
-    <Slider/>
+    <Navbar/>
+    {/* <Slider/>
     <About/>
     <Contact/> 
-    <Adress/> 
-    <Footer/>
+    <Adress/>*/} 
+  {/* <Product/>
+  <Footer/>  */}
     </>
   )
 }
