@@ -15,6 +15,11 @@ const Allcomp = () => {
                     <Route exact path='/' component={Contact} />
                     <Route exact path='/' component={Adress} />
 
+                    {/* <Slider/>
+                    <About/>
+                    <Contact/>
+                    <Adress/> */}
+
 
 
       
