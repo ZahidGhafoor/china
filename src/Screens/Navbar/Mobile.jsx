@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Mobile.scss"
+import { NavLink } from 'react-router-dom'
+
 
 import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
@@ -35,12 +37,12 @@ const Mobile = () => {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <div className="mobile__container">
-            <div className="home">Home</div>
-                  <div className="home">About</div>
-                  <div className="home">Contact</div>
-                  <div className="home">Adress</div>
-                  <div className="home">Products</div>
-                  <div className="home"><CloseIcon   className='icons' /></div>
+                <NavLink to="/" className="home">Home</NavLink>
+                <NavLink to="/" className="home">About</NavLink>
+                <NavLink to="/" className="home">Contact</NavLink>
+                <NavLink to="/" className="home">Adress</NavLink>
+                <NavLink to="/products" className="home">Products</NavLink>
+                <div className="home"><CloseIcon className='icons' /></div>
             </div>
 
         </Box>
