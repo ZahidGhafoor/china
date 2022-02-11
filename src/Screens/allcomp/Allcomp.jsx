@@ -11,9 +11,9 @@ const Allcomp = () => {
         <>
 
                     <Route exact path='/' component={Slider} />
-                    <Route exact path='/' component={About} />
-                    <Route exact path='/' component={Contact} />
-                    <Route exact path='/' component={Adress} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/contact' component={Contact} />
+                    <Route exact path='/adress' component={Adress} />
 
                     {/* <Slider/>
                     <About/>

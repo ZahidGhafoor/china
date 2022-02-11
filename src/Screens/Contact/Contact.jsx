@@ -1,13 +1,18 @@
 import React from 'react'
 import "./Contact.scss"
 
+
+import Zoom from 'react-reveal/Zoom';
+
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Contact = () => {
     return (
         <>
             <div className="contact__container">
+            <Zoom bottom>
                 <div className="heading">GET IN TOUCH</div>
+                </Zoom>
 
                 <div className="bottom__icon">
                     <KeyboardArrowDownIcon className="icon" />

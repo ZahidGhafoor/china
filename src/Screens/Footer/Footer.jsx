@@ -11,6 +11,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
+import Fade from 'react-reveal/Fade';
+
 const Footer = () => {
     return (
         <>
@@ -37,6 +39,7 @@ const Footer = () => {
                  
              </div>
               </div>  
+              <Fade bottom>
              <div className="footer__bottom">
                  <div className="icons">
                  <div className="icons1"><FacebookIcon className="bottom__icons"/></div>
@@ -48,6 +51,9 @@ const Footer = () => {
                  <div className="line1">SHIREEN TRADING 2017</div>
                  <div className="line1">ALL RIGHTS RESERVED.</div>
              </div>
+             </Fade>
+
+
         </>
     )
 }

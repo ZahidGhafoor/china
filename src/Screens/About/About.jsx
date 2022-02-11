@@ -11,6 +11,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
+import LightSpeed from 'react-reveal/LightSpeed';
+
 const About = () => {
 
   const [open, setOpen] = React.useState(false);
@@ -28,13 +30,19 @@ const About = () => {
     <>
       <div className="about__container">
         <div className="left">
+        <LightSpeed right >
           <div className="heading">
             ABOUT US
             </div>
+            </LightSpeed>
           <div className="para">
             JLC Group was established in Dubai, UAE in 2015 for Distribution of FMCG Products and Trading of Mineral & Mining Products, Consultancy Services. JLC Group comprises of JLC Global FZC (a Free Zone Company) & JLC General Trading LLC. JLC Group is part of an Indian Group of Companies which was established in the year 1950. The group has grown significantly in the region since its establishment and holds financial & equity interests in companies worldwide. JLC General Trading LLC is involved in FMCG distribution with brands such as Patanjali, SriSri Tattva, Dabur, Hyson Tea to name a few. We have a wide distribution network in the region with presence in many Hypermarkets & Supermarkets.
             </div>
+        <LightSpeed right >
+
           <button onClick={handleClickOpen} className="about__btn">Learn More</button>
+          </LightSpeed>
+
 
         </div>
           <img src={about} alt="" className="about__img" />

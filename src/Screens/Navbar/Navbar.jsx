@@ -21,11 +21,11 @@ const Navbar = () => {
                   <img src={logo} alt="" className="nav__logo"/>
               </div>
               <div className="nav">
-                  <NavLink to="/" className="home">Home</NavLink>
-                  <NavLink to="/" className="home">About</NavLink>
-                  <NavLink to="/" className="home">Contact</NavLink>
-                  <NavLink to="/" className="home">Adress</NavLink>
-                  <NavLink to="/products" className="home">Products</NavLink>
+                  <NavLink exact activeClassName='active' to="/" className="home">Home</NavLink>
+                  <NavLink activeClassName='active' to="/about" className="home">About</NavLink>
+                  <NavLink activeClassName='active' to="/contact" className="home">Contact</NavLink>
+                  <NavLink activeClassName='active' to="/adress" className="home">Adress</NavLink>
+                  <NavLink activeClassName='active' to="/products" className="home">Products</NavLink>
               </div>
              
               
