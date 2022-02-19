@@ -14,6 +14,7 @@ import s5 from "../../Assets/s5.jpg";
 import s6 from "../../Assets/s6.jpg";
 import s7 from "../../Assets/s7.jpg";
 import s8 from "../../Assets/s8.jpg";
+import Fade from 'react-reveal/Fade';
 
 
 import "./Slider.scss";
@@ -21,16 +22,21 @@ import "./Slider.scss";
 
 
 const Item = ({ item }) => {
+  
   return (
     <Paper className="slider_box">
+<Fade duration ={1200} bottom>
       <div className="headline"> 
-        <h3> Hellow again! </h3> 
-        <p> The Home Of Taste In West Drayton </p>
+        <h3> Hello again! </h3> 
+        <p> <i>"The Home Of Taste In West Drayton"</i></p>
       </div>
       <img src={item.img} alt="ERROR" id="img" />
+</Fade>
     </Paper>
   );
 };
+  
+
 
 const Slider = () => {
   var items = [
@@ -67,7 +73,7 @@ const Slider = () => {
       description: "Probably the most random thing you have ever seen!",
     },
   ];
-
+  
   return (
     <>
       <div className="slider_container">

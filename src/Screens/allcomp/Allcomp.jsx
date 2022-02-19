@@ -10,22 +10,20 @@ const Allcomp = () => {
     return (
         <>
 
-                    <Route exact path='/' component={Slider} />
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/contact' component={Contact} />
-                    <Route exact path='/adress' component={Adress} />
+                    {/* <Route  path='/' component={Slider} />
+                    <Route  path='/' component={About} />
+                    <Route  path='/' component={Contact} />
+                    <Route  path='/' component={Adress} /> */}
 
-                    {/* <Slider/>
+                    <Slider/>
                     <About/>
                     <Contact/>
-                    <Adress/> */}
+                    <Adress/>
 
 
 
       
-                <Switch>
-                    <Route exact path='/products' component={Product} />
-                </Switch>
+              
          
         </>
     )
