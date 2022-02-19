@@ -9,6 +9,7 @@ import Allcomp from './Screens/allcomp/Allcomp'
 import { Route, Switch } from 'react-router-dom'
 import Product from './Screens/Products/Product'
 import Venture from './Screens/Venture/Venture'
+import Test from './Screens/Redux/Text'
 
 
 
@@ -22,6 +23,9 @@ const App = () => {
       </Switch>
       <Footer /> */}
       <Venture/>
+      {/* <Allcomp />
+      <Footer /> 
+      <Test/> */}
     </>
   )
 }
