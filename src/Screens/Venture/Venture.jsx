@@ -344,6 +344,8 @@ const Venture = () => {
             }else{
                 setTab(2)
             }
+        }else if(tab == 2){
+            
         }
 
         // if (tab >= 6) {
