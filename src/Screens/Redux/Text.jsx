@@ -20,7 +20,9 @@ const Text = () => {
     // }
     return (
         <div style={{display:"flex", margin:"4rem"}}>
-            <h1 onClick={()=>dispatch(addnum())}>+</h1>
+            <h1 onClick={()=>dispatch(addnum( 
+                  
+            ))}>+</h1>
             <h2  style={{padding:" 0 2rem"}}>{myState}</h2>
             <h1 onClick={()=>dispatch(minnum())}>-</h1>
         </div>

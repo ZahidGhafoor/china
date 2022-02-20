@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import "./Venture.scss"
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import { useHistory } from "react-router";
+
 const Tell = (props) => {
     return (
         <>
@@ -103,7 +108,7 @@ const Income = (props) => {
                 <div className="tab__form">
                     <div className="first">
                         <div className="input__heading">Salary Expectations</div>
-                        <select className="first__name" id="cars"name="salaryexpect" onChange={props.SelectEvent} value={props.enteredData.salaryexpect}>
+                        <select className="first__name" id="cars" name="salaryexpect" onChange={props.SelectEvent} value={props.enteredData.salaryexpect}>
                             <option value="40">40,000-50,000</option>
                             <option value="50">50,000-60,000</option>
                             <option value="60">60,000-70,000</option>
@@ -312,6 +317,7 @@ const Venture = () => {
 
 
     })
+    const history = useHistory()
 
     const InputEvent = (event) => {
         let { name, value } = event.target;
@@ -322,9 +328,9 @@ const Venture = () => {
             }
         })
     }
-    const SelectEvent = (event) =>{
-        console.log( "Value ============== " , event.target.value);
-        console.log( "NAME ============== " , event.target.name);
+    const SelectEvent = (event) => {
+        console.log("Value ============== ", event.target.value);
+        console.log("NAME ============== ", event.target.name);
 
         let { name, value } = event.target;
 
@@ -338,21 +344,104 @@ const Venture = () => {
 
     const next = () => {
 
-        if(tab == 1){
-            if(!enteredData.strength || !enteredData.weekness || !enteredData.goal ){
-                alert("Fill All")
-            }else{
+        if (tab == 1) {
+            if (!enteredData.strength || !enteredData.weekness || !enteredData.goal) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
                 setTab(2)
             }
-        }else if(tab == 2){
-            
+        } else if (tab == 2) {
+            if (!enteredData.firstName || !enteredData.lastName) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                setTab(3)
+            }
+        } else if (tab == 3) {
+            if (!enteredData.currentsalary || !enteredData.members || !enteredData.occupation) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                setTab(4)
+            }
+
+        } else if (tab == 4) {
+            if (!enteredData.whyInterested || !enteredData.strategies || !enteredData.challenges) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                setTab(5)
+            }
+
+        } else if (tab == 5) {
+            if (!enteredData.rules || !enteredData.restrictions || !enteredData.thirdparty) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                setTab(6)
+            }
+
+        } else {
+            if (!enteredData.expect || !enteredData.understand || !enteredData.feedback) {
+                toast.error("Please Fill All Fields", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            } else {
+                toast.success("Application Submitted Successfully", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+                setTimeout(() => history.go(0), 5000);
+            }
         }
 
-        // if (tab >= 6) {
-        //     setTab(6);
-        // } else {
-        //     setTab(parseFloat(tab) + 1);
-        // }
         console.log("next", tab);
     };
     const prev = () => {
@@ -363,11 +452,22 @@ const Venture = () => {
         }
         console.log("prev", tab);
     };
-  
+
 
     return (
         <>
             <div className="venture__container">
+                <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
                 <div className="tabs">
                     <div id="1" className={tab == 1 ? "active" : "first"}>
                         <div className="text">1. Tell us more</div>
@@ -425,7 +525,7 @@ const Venture = () => {
                         </div> :
                         tab == 1 ?
                             <div className="btn">
-                                <button style={{opacity:0}} className="first">BACK</button>
+                                <button style={{ opacity: 0 }} className="first">BACK</button>
                                 <button onClick={next} className="third">CONTINUE</button>
                             </div> :
 
