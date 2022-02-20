@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import "./Venture.scss"
 
+// Tostify
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useHistory } from "react-router";
+
+
+// Form Input components
+// There should be separate compnonents but here I like using this approach 
 
 const Tell = (props) => {
     return (
